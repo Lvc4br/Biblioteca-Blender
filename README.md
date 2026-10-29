@@ -1,40 +1,35 @@
 # Biblioteca Blender
 
-Biblioteca pessoal para organizar, versionar e preservar projetos e arquivos 3D desenvolvidos no **Blender** por Luca Toniolo.
+Repositório privado planejado para organizar, versionar e preservar arquivos-fonte 3D desenvolvidos no **Blender**.
 
-> Repositório de armazenamento e evolução de trabalhos 3D. O acesso é privado; os trabalhos selecionados podem ser apresentados nos portfólios públicos.
+> **Estado atual:** a árvore versionada contém somente este README. Os projetos listados no portfólio não estão armazenados aqui neste momento; esta página descreve o objetivo da biblioteca, não confirma a presença dos arquivos.
 
 ## Objetivo
 
 - Preservar arquivos de projeto e versões de trabalho.
-- Organizar estudos e assets 3D em categorias.
+- Organizar estudos e assets 3D em pastas por projeto.
 - Manter os arquivos-fonte separados das apresentações e renders publicados.
-- Possibilitar, futuramente, integração com ferramentas de catalogação do portfólio, caso essa estrutura seja implementada.
+- Permitir, futuramente, integração com ferramentas de catalogação do portfólio, caso essa integração seja implementada.
 
-## Categorias e projetos registrados
+## Estrutura sugerida
 
-A biblioteca inclui ou organiza trabalhos de modelagem de produto, cenas, animações, efeitos visuais e estudos arquitetônicos. Entre os projetos documentados estão:
+Quando os arquivos forem adicionados, uma organização possível é:
 
-- **Blackmagic ATEM Mini Pro** — modelagem de produto.
-- **Coca-Cola Bottle** — estudo de modelagem e apresentação de produto.
-- **Crank Boy / Game Boy** — conceito de objeto inspirado em console portátil.
-- **Sci-fi Planet** — cena e ambiente de ficção científica.
-- **Laser Animation** — estudo de luz, materiais emissores e efeitos volumétricos.
-- **Water VFX Simulation** — experimento de simulação de fluidos.
-- **Coliseu de Roma** — projeto arquitetônico em desenvolvimento.
-- **Constelação Floral** — conceito autoral de joias em desenvolvimento.
+```text
+Biblioteca-Blender/
+├── product-models/
+├── environments/
+├── animation-vfx/
+├── architecture/
+├── experiments/
+└── README.md
+```
 
-O estado e o nível de acabamento variam por projeto. A lista acima não significa que todos estejam concluídos ou publicados.
+Essa árvore é uma proposta, não uma estrutura já existente. Nomeie as pastas conforme o conteúdo real e evite duplicar arquivos de projetos que já tenham um repositório canônico.
 
-## Estrutura
+## Versionamento de arquivos grandes
 
-Os arquivos estão organizados em pastas por projeto e categoria. Consulte a árvore do repositório para ver os diretórios existentes; a organização pode evoluir com o crescimento da biblioteca.
-
-## Baixar e abrir arquivos
-
-Os arquivos `.blend` podem ser grandes. Se houver um pacote publicado em [Releases](https://github.com/Lvc4br/Biblioteca-Blender/releases), baixe e extraia o arquivo correspondente. Caso contrário, clone ou baixe o repositório conforme as permissões disponíveis.
-
-Para versionamento frequente de arquivos grandes, considere Git LFS. Não execute comandos de rastreamento do Git LFS sem antes avaliar o tamanho dos arquivos e a configuração atual do repositório.
+Antes de adicionar arquivos `.blend`, verifique o tamanho e o histórico desejado. Git LFS pode ser útil para arquivos grandes, mas deve ser configurado deliberadamente; não habilite rastreamento global sem avaliar as cotas e os arquivos existentes. Exporte renders e vídeos de demonstração para portfólios públicos quando apropriado, sem expor arquivos privados ou dados de terceiros.
 
 ## Portfólios públicos
 
